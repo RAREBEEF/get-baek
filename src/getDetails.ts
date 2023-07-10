@@ -21,6 +21,7 @@ const getDetails = (id: string): Promise<ProblemDetails> => {
 
         res.on("end", () => {
           const $ = cheerio.load(body);
+          const title = $("#problem_title").text();
           const problemBody = $("#problem-body");
           const description = problemBody
             .find("#problem_description")
@@ -55,6 +56,7 @@ const getDetails = (id: string): Promise<ProblemDetails> => {
             });
 
           resolve({
+            title,
             description,
             input,
             output,

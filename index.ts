@@ -12,12 +12,13 @@ export interface SampleInOutPut {
 }
 
 export interface Problem {
-  step: string;
+  step: string | null;
   id: string;
   title: string;
 }
 
 export interface ProblemDetails {
+  title: string;
   description: string;
   input: string;
   output: string;
