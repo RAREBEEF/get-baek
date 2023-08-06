@@ -2,9 +2,9 @@ console.time("실행 시간");
 
 import fs from "fs";
 import _path from "path";
-import createStepFolders from "./src/createStepFolders";
-import createProblems from "./src/createProblems";
-import { SOLUTION_EXTENSION } from "./env";
+import createStepFolders from "./createStepFolders";
+import createProblems from "./createProblems";
+import { SOLUTION_EXTENSION } from "../env";
 
 export interface SampleInOutPut {
   input: string;

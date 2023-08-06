@@ -2,10 +2,10 @@ console.time("실행 시간");
 
 import readlineSync from "readline-sync";
 import fs from "fs";
-import getDetails from "./src/getDetails";
-import { BASE_URL, FILE_PATH, SOLUTION_EXTENSION } from "./env";
+import getDetails from "./getDetails";
+import { BASE_URL, FILE_PATH, SOLUTION_EXTENSION } from "../env";
 import { Problem } from ".";
-import getImg from "./src/getImg";
+import getImg from "./getImg";
 
 export interface CreateSingleProblemResult {
   created: { solution: number; txt: number; img: number };
